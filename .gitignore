@@ -1,0 +1,12 @@
+# IntelliJ
+*.iml
+.idea/
+out/
+
+# Directories
+run/
+target/
+lib/
+
+# Jars
+*.jar
