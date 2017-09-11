@@ -42,4 +42,9 @@ public class MemberClassRemapper extends ClassRemapper {
         }
         return super.visitMethod(access, name, desc, signature, exceptions);
     }
+
+    @Override
+    protected MethodVisitor createMethodRemapper(MethodVisitor mv) {
+        return new LocalVariableMethodRemapper(mv, memberRemapper);
+    }
 }

@@ -96,7 +96,7 @@ acv$a EvokerEntity$FangsSpellGoal
 acv$b EvokerEntity$FindWololoSpellTargetGoal
 acv$c EvokerEntity$SummonVexSpellGoal
 acv$d EvokerEntity$WololoSpellGoal
-acw GhasEntity
+acw GhastEntity
 acw$a GhastEntity$FlyTowardsTargetGoal
 acw$b GhastEntity$MoveController
 acw$c GhastEntity$ShootFireballGoal
@@ -757,7 +757,7 @@ awk PistonTileEntity
 awl PistonExtensionHelper
 awn AbstractBlockState
 awo BlockPhysicsHandler
-awp EnumBlockFaceShape
+awp BlockSideType
 awq BlockPropertiesHolder
 awr BlockState
 aws BlockStateContainer
@@ -1272,10 +1272,10 @@ et$a BlockPosition$MutableBlockPosition
 et$b BlockPosition$PooledMutableBlockPosition
 eu SourceBlock
 ev DispensedSourceBlock
-ew IteratorUtils
-ew$a IteratorUtils$ArrayToList
-ew$b IteratorUtils$ClassIterable
-ew$b$a IteratorUtils$ClassIterable$ClassIterator
+ew IterableUtils
+ew$a IterableUtils$ArrayToList
+ew$b IterableUtils$ArrayIterable
+ew$b$a IterableUtils$ArrayIterable$ArrayIterator
 ex DroppedItemDispenseBehaviour
 ey DefaultedMappedRegistry
 ez DefaultedRegistry
@@ -1289,7 +1289,7 @@ fc Registry
 fd IntegerRegistry
 fe SourceLocation
 ff Source
-fg MapIteratorUtils
+fg MapIterableUtils
 fh BiIntegerRegistry
 fi NonNullList
 fj Particles

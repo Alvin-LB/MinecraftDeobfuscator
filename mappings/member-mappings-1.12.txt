@@ -1,4 +1,25 @@
+AbstractChatComponent a children
+AbstractChatComponent b style
+AbstractChatComponent a (Ljava/lang/Iterable;)Ljava/util/Iterator; makeIteratorCopy
+AbstractCommand a (Ljava/lang/String;Ljava/lang/String;)Z startMatches
 AbstractHorseEntity do ()LSound; getAngrySound
+AbstractStoneSlabBlock$Variant a STONE
+AbstractStoneSlabBlock$Variant b SANDSTONE
+AbstractStoneSlabBlock$Variant c WOOD_OLD
+AbstractStoneSlabBlock$Variant d COBBLESTONE
+AbstractStoneSlabBlock$Variant e BRICK
+AbstractStoneSlabBlock$Variant f STONE_BRICK
+AbstractStoneSlabBlock$Variant g NETHER_BRICK
+AbstractStoneSlabBlock$Variant h QUARTZ
+AbstractStoneSlabBlock$Variant i VALUES
+AbstractStoneSlabBlock$Variant j id
+AbstractStoneSlabBlock$Variant k mapColour
+AbstractStoneSlabBlock$Variant l name
+AbstractStoneSlabBlock$Variant m legacyName
+AbstractStoneSlabBlock$Variant a ()I getId
+AbstractStoneSlabBlock$Variant c ()LMapColour; getMapColour
+AbstractStoneSlabBlock$Variant a (I)LAbstractStoneSlabBlock$Variant; fromId
+AbstractStoneSlabBlock$Variant d ()Ljava/lang/String; getLegacyName
 AbstractWorld s worldHelper
 AbstractWorld x worldData
 AbstractWorld R ()J getAge
@@ -8,10 +29,13 @@ AbstractWorld W ()LGameRules; getGameRules
 AbstractWorld a (LCrashReport;)LCrashDetailCollector; appendCrashDetails
 AbstractWorld d ()V tick
 AbstractWorld k ()V tickEntities
-AbstractChatComponent a children
-AbstractChatComponent b style
-AbstractChatComponent a (Ljava/lang/Iterable;)Ljava/util/Iterator; makeIteratorCopy
-AbstractCommand a (Ljava/lang/String;Ljava/lang/String;)Z startMatches
+BanList a (Lcom/mojang/authlib/GameProfile;)Z contains
+Biome d GRAVEL_BLOCK_STATE
+Biome i BIOME_IDS
+BlockRotationDirection a ROTATE_0
+BlockRotationDirection b ROTATE_90
+BlockRotationDirection c ROTATE_180
+BlockRotationDirection d ROTATE_270
 Blocks A SANDSTONE
 Blocks B NOTEBLOCK
 Blocks C BED
@@ -267,6 +291,26 @@ Blocks w GLASS
 Blocks x LAPIS_ORE
 Blocks y LAPIS_BLOCK
 Blocks z DISPENSER
+BlockSideType a SOLID
+BlockSideType b PERIMETER
+BlockSideType c THIN_CENTER_DOT
+BlockSideType d THIN_VERTICAL_CENTER_STRIP
+BlockSideType e CENTER_DOT
+BlockSideType f VERTICAL_CENTER_STRIP
+BlockSideType g THICK_CENTER_DOT
+BlockSideType h THICK_VERTICAL_CENTER_STRIP
+BlockSideType i NOT_DEFINED
+BlockState c (LBlockStateProperty;)Ljava/lang/Comparable; getPropertyValue
+BlockStateContainer a PROPERTY_PATTERN
+BlockStateContainer b STRING_REPRESENTATOR
+BlockStateContainer c block
+BlockStateContainer d properties
+BlockStateContainer e permutations
+BlockStateProperty a (Ljava/lang/Comparable;)Ljava/lang/String; getStringValueRepresentation
+BlockStateProperty a ()Ljava/lang/String;
+BlockStateProperty b (Ljava/lang/String;)Lcom/google/common/base/Optional; parseValue
+BlockStateProperty b ()Ljava/lang/Class; getType
+BlockStateProperty c ()Ljava/util/Collection; getPossibleValues
 ChatComponent a (LChatComponent;)LChatComponent; addChild
 ChatComponent a (Ljava/lang/String;)LChatComponent; addChild
 ChatComponent a ()Ljava/util/List; getChildren
@@ -342,6 +386,7 @@ ClientboundPlayerInfoPacket$Action e REMOVE_PLAYER
 CommandHandler a (LCommandSender;Ljava/lang/String;LBlockPosition;)Ljava/util/List; getTabCompletions
 CommandSender a (ILjava/lang/String;)Z canExecute
 CommandSender h_ ()Ljava/lang/String; getName
+CommandSender i_ ()LChatComponent; getDisplayName
 ComponentClickEvent a action
 ComponentClickEvent b value
 ComponentClickEvent a ()LComponentClickEvent$Action; getAction
@@ -449,6 +494,22 @@ Direction$AxisDirection a TOWARDS_POSITIVE
 Direction$AxisDirection b TOWARDS_NEGATIVE
 Direction$Plane a HORIZONTAL
 Direction$Plane b VERTICAL
+DyeColour a WHITE
+DyeColour b ORANGE
+DyeColour c MAGENTA
+DyeColour d LIGHT_BLUE
+DyeColour e YELLOW
+DyeColour f LIME
+DyeColour g PINK
+DyeColour h GREY
+DyeColour i SILVER
+DyeColour j CYAN
+DyeColour k PURPLE
+DyeColour l BLUE
+DyeColour m BROWN
+DyeColour n GREEN
+DyeColour o RED
+DyeColour p BLACK
 EndermanEntity by SCREAMING
 EndermanEntity do ()Z isScreaming
 Entity A collidedHorizontally
@@ -694,7 +755,6 @@ Entity i ()V initMetadataWatcher
 Entity i (I)V setOnFire
 Entity i (LEntity;)V collide
 Entity i (Z)V setInvulnerable
-Entity i_ ()LChatComponent; getScoreboardDisplayName
 Entity j mountCooldown
 Entity j (LEntity;)LAxisAlignedBB; getCollisionBox
 Entity j (I)V burn
@@ -971,6 +1031,11 @@ Items w STONE_AXE
 Items x DIAMOND_SWORD
 Items y DIAMOND_SHOVEL
 Items z DIAMOND_PICKAXE
+IterableUtils a (Ljava/lang/Iterable;)Ljava/lang/Iterable; convertNestedIterableToListIterable
+IterableUtils a (Ljava/lang/Class;Ljava/lang/Iterable;)Ljava/lang/Iterable; convertNestedIterableToArrayIterable
+IterableUtils a (Ljava/lang/Class;I)[Ljava/lang/Object; createArray
+IterableUtils b (Ljava/lang/Iterable;)Ljava/lang/Iterable; convertArrayIterableToListIterable
+IterableUtils b (Ljava/lang/Class;Ljava/lang/Iterable;)[Ljava/lang/Object; convertIterableToArray
 Jumping a ()Z canJump
 Jumping b_ (I)V startJumping
 Jumping r_ ()V stopJumping
@@ -992,6 +1057,8 @@ LegacyChunkLoader$Chunk i tileEntities
 LegacyChunkLoader$Chunk j tileTicks
 LegacyChunkLoader$Chunk k posX
 LegacyChunkLoader$Chunk l posZ
+LlamaEntity bK hasSpit
+LlamaEntity a (Z)V setSpit
 LootTable a EMPTY_LOOT_TABLE
 LootTables a EMPTY
 LootTables a ()Ljava/util/Set; getValues
@@ -1081,6 +1148,8 @@ LootTables aA GAMEPLAY_FISHING
 LootTables aB GAMEPLAY_FISHING_JUNK
 LootTables aC GAMEPLAY_FISHING_TREASURE
 LootTables aD GAMEPLAY_FISHING_FISH
+MapIterableUtils a (Ljava/lang/Iterable;Ljava/lang/Iterable;Ljava/util/Map;)Ljava/util/Map; addIterablesToMap
+MapIterableUtils b (Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/Map; makeMapFromIterables
 MathHelper a ROOT_TWO
 MathHelper a ()Ljava/util/UUID; randomUUID
 MathHelper a (Ljava/util/Random;)Ljava/util/UUID; randomUUID
@@ -1137,6 +1206,7 @@ MagicIllagerEntity$Spell f BLINDNESS
 MagicIllagerEntity$SpellGoal j ()V applySpell
 MagicIllagerEntity$SpellGoal k ()LSoundEffect; getSoundEffect
 MagicIllagerEntity$SpellGoal l ()LMagicIllagerEntity$SpellGoal; getSpell
+Merchant i_ ()LChatComponent; getDisplayName
 MetadataWatcherSerializers a (LMetadataWatcherSerializer;)V register
 MetadataWatcherSerializers a (I)LMetadataWatcherSerializer; fromId
 MetadataWatcherSerializers b (LMetadataWatcherSerializer;)I getId
@@ -1265,8 +1335,22 @@ MinecraftServer L ()Z isDebugEnabled
 MinecraftServer M ()Z hasUniverse
 MiscUtils a (Ljava/util/List;)Ljava/lang/Object; getLastElement
 MiscUtils a (Ljava/util/concurrent/FutureTask;Lorg/apache/logging/log4j/Logger;)Ljava/lang/Object; executeTask
+NamableTileEntity h_ ()Ljava/lang/String; getName
+NamableTileEntity i_ ()LChatComponent; getDisplayName
+NamableTileEntity n_ ()Z hasCustomName
+Named m ()Ljava/lang/String; getName
+NBTIO a (LCompoundNBTTag;Ljava/io/DataOutput;)V writeCompound
 OpList a (Lcom/mojang/authlib/GameProfile;)I getPermissionLevel
 OpList b (Lcom/mojang/authlib/GameProfile;)Z bypassesPlayerLimit
+PathfinderGoal a concurrencyFlags
+PathfinderGoal a (I)V setConcurrencyFlags
+PathfinderGoal a ()Z shouldExecute
+PathfinderGoal b ()Z continueExecution
+PathfinderGoal c ()V startExecution
+PathfinderGoal d ()V restartExecution
+PathfinderGoal e ()V updateExecution
+PathfinderGoal g ()Z isInterruptible
+PathfinderGoal h ()I getConcurrencyFlags
 PlayerAbilities a invulnerable
 PlayerAbilities b flying
 PlayerAbilities c mayFly
@@ -1288,6 +1372,8 @@ PlayerList f ()[Ljava/lang/String; getOnlinePlayerNames
 PlayerList g ()[Lcom/mojang/authlib/GameProfile; getOnlineProfiles
 PlayerList o ()I getOnlinePlayerCount
 PlayerList p ()I getMaxPlayerCount
+RabbitEntity bD carrotTicks
+RabbitEntity c ()Z finishedEatingCarrot
 RabbitEntity do ()V createCarrotParticles
 RegistryManager c ()V init
 # e() to h(), G() to J() and L() are duplicated in the MinecraftServer mappings because the deobfuscator
@@ -1869,7 +1955,20 @@ Sounds jC ENTITY_ZOMBIE_VILLAGER_STEP
 TextChatComponent b text
 TextChatComponent g ()Ljava/lang/String; getText
 Tickable e ()V doTick
+TileEntity i_ ()LChatComponent; getDisplayName
+TrapdoorBlock a FACING
+TrapdoorBlock b OPEN
+TrapdoorBlock c HALF
+TrapdoorBlock d OPEN_EAST_BB
+TrapdoorBlock e OPEN_WEST_BB
+TrapdoorBlock f OPEN_SOUTH_BB
+TrapdoorBlock g OPEN_NORTH_BB
+TrapdoorBlock B CLOSED_BOTTOM_BB
+TrapdoorBlock C CLOSED_TOP_BB
+TrapdoorBlock$Half a TOP
+TrapdoorBlock$Half b BOTTOM
 VillagerEntity do ()Z hasTradingPlayer
+WhiteList a (Lcom/mojang/authlib/GameProfile;)Z contains
 World L entityTracker
 World v ()LEntityTracker; getEntityTracker
 WorldData q levelName
